@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>openlink</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Floating canvas background network -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Full width top header -->
+  <header class="app-header">
+    <a href="#/" class="logo-wordmark">
+      <span class="logo-open">open</span><span class="logo-link-part">link</span>
+    </a>
+    <div class="header-right-group">
+      <div id="header-nav"></div>
+      <button type="button" id="theme-toggle-btn" class="btn btn-secondary theme-toggle-btn">Light</button>
+    </div>
+  </header>
+
+  <!-- Main content area -->
+  <div class="app-container">
+    <main id="app-root"></main>
+  </div>
+
+  <!-- Privacy footer -->
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <h3 class="footer-heading">Privacy</h3>
+      <p class="footer-text">
+        Your code is only accessible to people who have your link. Every batch is deleted automatically when the time you chose ends. We don't ask for any personal information, and your data is never sold or shared.
+      </p>
+    </div>
+  </footer>
+
+  <script src="storage.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
